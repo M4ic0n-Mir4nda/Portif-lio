@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background-color: #272A3D;
+}
+
+#burguer {
+    background-color: #272A3D;
+    display: none;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#itens {
+    background-color: #272A3D;
+    text-align: right;
+    padding: 10px;
+    display: none;
+}
+
+#itens a {
+    text-decoration: none;
+    color: #c08cdb;
+}
+
+.menu a{
+    color: #c08cdb;
+    text-decoration: none;
+    margin-left: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: normal;
+    transition-duration: .5s;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+#apresentacao img {
+    height: 22em;
+    border-radius: 25%;
+}
+
+.col-1 {
+    background-color: #211E29;
+}
+
+#apresentacao{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    color: white;
+    padding: 30px;
+}
+
+.sobre-mim {
+    min-width: 300px;
+    padding: 20px;
+}
+
+.sobre-mim h1 {
+    display: inline-block;
+    font-size: 3em;
+}
+
+.sobre-mim p {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.sobre-mim a {
+    text-decoration: none;
+    background-color: #278B42;
+    color: white;
+    padding: 7px 10px 7px 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.col-2 {
+    background-color: #2E2A3D;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.col-2 h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.col-2 p {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 1em;
+}
+
+.col-3 {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logos-linguagens img{
+    margin: 15px;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .col-3 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    #apresentacao {
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre-mim h1{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+    #burguer {
+        display: block;
+    }
+}
+
+
