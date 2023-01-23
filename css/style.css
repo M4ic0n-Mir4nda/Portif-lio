@@ -142,7 +142,7 @@ h1 {
 #experiencias .col-4 {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 300px;
 }
 
 #experiencias .col-5 {
@@ -159,8 +159,8 @@ h1 {
 
 .botoes-experiencias button {
     display: block;
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 15px;
     width: 450px;
     text-align: left;
     border-radius: 5px;
