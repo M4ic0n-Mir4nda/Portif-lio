@@ -12,10 +12,16 @@ body {
 }
 
 nav {
-    display: block;
     text-align: center;
     padding: 15px;
     background-color: #272A3D;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 2.8em;
+    font-weight: bolder;
 }
 
 #burguer {
@@ -54,12 +60,16 @@ nav {
 }
 
 #apresentacao img {
-    height: 22em;
-    border-radius: 25%;
+    height: 25em;
+    border-radius: 5%;
+    transition-duration: .5s;
 }
 
-.col-1 {
-    background-color: #211E29;
+#apresentacao img:hover {
+    -moz-transform: scale(.9,.9);
+	-webkit-transform: scale(.9,.9);
+	transform: scale(.9,.9);
+    transition-duration: .5s;
 }
 
 #apresentacao{
@@ -97,17 +107,15 @@ nav {
     font-size: 1.1em;
 }
 
+.col-1 {
+    background-color: #211E29;
+}
+
 .col-2 {
     background-color: #2E2A3D;
     display: flex;
     align-items: center;
     color: white;
-}
-
-.col-2 h1 {
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 2.5em;
 }
 
 .col-2 p {
@@ -122,16 +130,54 @@ nav {
     margin: 0 auto;
 }
 
+.titulo-experiencias {
+    padding: 10px;
+}
+
+#experiencias {
+    background-color: #211E29;
+    color: white;
+}
+
+#experiencias .col-4 {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#experiencias .col-5 {
+    background-color: #272A3D;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.col-5 p {
+    display: block;
+    padding: 10px;
+}
+
+.botoes-experiencias button {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    width: 450px;
+    text-align: left;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #272A3D;
+    transition-duration: .5s;
+    color: black;
+}
+
+.botoes-experiencias button:hover {
+    background-color: #202233;
+}
+
 .logos-linguagens img{
     margin: 15px;
     padding-left: 20px;
-}
-
-@media only screen and (max-width: 1000px) {
-    .col-3 {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 @media only screen and (max-width: 940px) {
@@ -139,8 +185,20 @@ nav {
         display: flex;
         flex-direction: column;
     }
+
+    #apresentacao img {
+        border-radius: 50%;
+    }
+    
     .sobre-mim h1{
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .col-3 {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -154,4 +212,10 @@ nav {
     }
 }
 
-
+@media only screen and (max-width: 950px) {
+    #experiencias .col-4 {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+}
