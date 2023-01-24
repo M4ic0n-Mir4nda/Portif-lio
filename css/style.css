@@ -13,13 +13,13 @@ body {
 
 nav {
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     background-color: #272A3D;
 }
 
 h1 {
     text-align: center;
-    padding-bottom: 20px;
+
     font-size: 2.8em;
     font-weight: bolder;
 }
@@ -60,12 +60,12 @@ h1 {
 }
 
 #apresentacao img {
-    height: 25em;
+    height: 28em;
     border-radius: 5%;
     transition-duration: .5s;
 }
 
-#apresentacao img:hover {
+.animacaoImagemPerfil {
     -moz-transform: scale(.9,.9);
 	-webkit-transform: scale(.9,.9);
 	transform: scale(.9,.9);
@@ -89,22 +89,28 @@ h1 {
 .sobre-mim h1 {
     display: inline-block;
     font-size: 3em;
+    padding-bottom: 20px;
 }
 
 .sobre-mim p {
     display: inline-block;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-size: 1.1em;
 }
 
 .sobre-mim a {
     text-decoration: none;
-    background-color: #278B42;
+    background-color: #35914d;
     color: white;
     padding: 7px 10px 7px 10px;
     border-radius: 5px;
     font-size: 1.1em;
+    transition-duration: .5s;
+}
+
+.sobre-mim a:hover {
+    background-color: #278B42;
+    transition-duration: .5s;
 }
 
 .col-1 {
@@ -130,8 +136,8 @@ h1 {
     margin: 0 auto;
 }
 
-.titulo-experiencias {
-    padding: 10px;
+.col-3 h1 {
+    padding-bottom: 20px;
 }
 
 #experiencias {
@@ -152,12 +158,18 @@ h1 {
     margin: 20px;
 }
 
-.col-5 p {
-    display: block;
-    padding: 10px;
+.tituloExperiencia {
+    margin-left: 10px;
+    font-weight: normal;
 }
 
-.botoes-experiencias button {
+.explicaoExperiencia {
+    display: block;
+    padding: 10px;
+    text-align: justify;
+}
+
+button {
     display: block;
     padding: 15px;
     margin: 15px;
@@ -168,7 +180,7 @@ h1 {
     cursor: pointer;
     background-color: #272A3D;
     transition-duration: .5s;
-    color: black;
+    color: white;
 }
 
 .botoes-experiencias button:hover {
@@ -205,10 +217,21 @@ h1 {
 @media only screen and (max-width: 710px) {
     nav {
         display: none;
-        flex-direction: column;
     }
     #burguer {
         display: block;
+    }
+}
+
+@media only screen and (min-width: 711px) {
+    nav {
+        display: block;
+    }
+    #burguer {
+        display: none;
+    }
+    #itens li {
+        display: none;
     }
 }
 

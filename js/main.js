@@ -1,17 +1,43 @@
+const imgPerfil = document.querySelector('.img-perfil');
+const menuBurguer = document.querySelector('#burguer');
+const buttons = document.querySelectorAll('[data-experiencias]')
+
+imgPerfil.addEventListener('mouseenter', () => {
+    imgPerfil.classList.add('animacaoImagemPerfil');
+})
+
+imgPerfil.addEventListener('mouseout', () => {
+    imgPerfil.classList.remove('animacaoImagemPerfil');
+})
+
+buttons.forEach( (elemento) => {
+    elemento.addEventListener('click', (event) => {
+        experienciaTrabalho(event.target.dataset.experiencias)
+    })
+})
+
 function clickMenu() {
     const listItens = document.querySelector('#itens');
-    const nav = document.querySelector('.menu');
-    const conteudo = document.querySelector('.container');
 
     if (listItens.style.display == 'block') {
         listItens.style.display = 'none';
-        conteudo.style.display = 'block';
     } else {
         listItens.style.display = 'block';
-        conteudo.style.display = 'none';
-        nav.style.display = 'none';
-    }
+    }  
 }
 
+function experienciaTrabalho(experiencia) {
+    const titulo = document.querySelector('.tituloExperiencia');
+    const explicacao = document.querySelector('.explicaoExperiencia');
 
-
+    if (experiencia == 'estoquista') {
+        titulo.innerHTML = 'Darc by Magazine'
+        explicacao.innerHTML = 'Responsavel no recebimento e na conferência de produtos, separação de materiais de acordo com especificações, acompanhamento de produtos que estiverem acabando, elaboração de relatórios sobre a entrada e saída de produtos, separação de pedidos e manutenção da organização do local em que se encontram esses produtos'
+    } else if (experiencia == 'vendedor') {
+        titulo.innerHTML = 'Darc by Magazine'
+        explicacao.innerHTML = 'Responsável pelo atendimento direto ao consumidor, negocia os preços de uma mercadoria, os prazo, as condições de pagamento e os descontos dessa venda. orienta o cliente sobre as especificações dos produtos e/ou serviços, controlar a demanda dos pedidos em estoque e cumpre as meta de vendas.'
+    } else {
+        titulo.innerHTML = 'Dni Autocom Automação'
+        explicacao.innerHTML = 'Responsável pelo gerenciamento de rede da empresa, criação de usuários de rede, gerenciamento de servidor de domínio, políticas de grupo, gerenciamento de regras no servidor de arquivos, configuração de firewall, configuração de roteadores, impressoras, periféricos em geral, manutenção de maquina, suporte ao cliente e etc.'
+    }
+}
