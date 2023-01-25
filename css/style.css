@@ -466,7 +466,7 @@ a{
 @media only screen and (max-width: 718px) {
     .contacts-buttons-area {
         display: flex;
-        width: 80%;
+        width: 90%;
         height: 100%;
         flex-direction: column;
         gap: 10px;
