@@ -187,9 +187,15 @@ button {
     background-color: #202233;
 }
 
-.logos-linguagens img{
-    margin: 15px;
-    padding-left: 20px;
+.logos-linguagens {
+    display: flex;
+    align-items: center;
+}
+
+.container-logos {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 
 footer {
