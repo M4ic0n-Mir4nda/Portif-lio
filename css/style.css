@@ -306,7 +306,22 @@ a{
 .rede-social img{
     height: 60px;
     width: 50px;
-    margin-left: 45px;
+}
+
+.rede-social {
+    display: table;
+    flex-direction: column;
+}
+
+.conteiner-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .github h2{
@@ -323,9 +338,15 @@ a{
     margin: 0 auto;
 }
 
-.github .link-github {
-    margin-top: 30px;
-    margin-left: 70px;
+.github .conteiner-link {
+    display: table;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.conteiner-link .link-github {
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 940px) {
@@ -387,7 +408,7 @@ a{
     }
 }
 
-@media only screen and (max-width: 1103px) {
+@media only screen and (max-width: 770px) {
     footer .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -419,10 +440,6 @@ a{
         margin: 0 auto;
         height: 60px;
         width: 50px;
-    }
-    
-    .github .link-github {
-        display: none;
     }
 }
 

@@ -1,6 +1,6 @@
 const imgPerfil = document.querySelector('.img-perfil');
 const menuBurguer = document.querySelector('#burguer');
-const buttons = document.querySelectorAll('[data-experiencias]')
+const arrButtons = document.querySelectorAll('[data-experiencias]')
 
 imgPerfil.addEventListener('mouseenter', () => {
     imgPerfil.classList.add('animacaoImagemPerfil');
@@ -10,7 +10,7 @@ imgPerfil.addEventListener('mouseout', () => {
     imgPerfil.classList.remove('animacaoImagemPerfil');
 })
 
-buttons.forEach( (elemento) => {
+arrButtons.forEach( (elemento) => {
     elemento.addEventListener('click', (event) => {
         experienciaTrabalho(event.target.dataset.experiencias)
     })
