@@ -1,5 +1,4 @@
 const imgPerfil = document.querySelector('.img-perfil');
-const menuBurguer = document.querySelector('#burguer');
 const arrButtons = document.querySelectorAll('[data-experiencias]');
 
 $('nav a').click(function(event) {
