@@ -24,6 +24,20 @@ h1 {
     font-weight: bolder;
 }
 
+.menu a{
+    color: #c08cdb;
+    text-decoration: none;
+    margin-left: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: normal;
+    transition-duration: .5s;
+}
+
+.menu a:hover {
+    color: white;
+}
+
 #burguer {
     background-color: #272A3D;
     display: none;
@@ -45,23 +59,9 @@ h1 {
     color: #c08cdb;
 }
 
-.menu a{
-    color: #c08cdb;
-    text-decoration: none;
-    margin-left: 5px;
-    padding: 10px;
-    font-size: 1.2em;
-    font-weight: normal;
-    transition-duration: .5s;
-}
-
-.menu a:hover {
-    color: white;
-}
-
 #apresentacao img {
-    height: 28em;
-    border-radius: 5%;
+    height: 25.5em;
+    border-radius: 10%;
     transition-duration: .5s;
 }
 
@@ -89,7 +89,7 @@ h1 {
 .sobre-mim h1 {
     display: inline-block;
     font-size: 3em;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .sobre-mim p {
@@ -113,31 +113,42 @@ h1 {
     transition-duration: .5s;
 }
 
-.col-1 {
+.conteiner-apresentacao {
     background-color: #211E29;
 }
 
-.col-2 {
+.container-habilidades-box {
     background-color: #2E2A3D;
     display: flex;
     align-items: center;
     color: white;
 }
 
-.col-2 p {
+.container-habilidades-box p {
     text-align: center;
     padding-bottom: 15px;
     font-size: 1em;
 }
 
-.col-3 {
+.conteiner-habilidades {
     display: flex;
     align-items: center;
     margin: 0 auto;
 }
 
-.col-3 h1 {
+.conteiner-habilidades h1 {
     padding-bottom: 20px;
+}
+
+.logos-linguagens {
+    display: flex;
+    align-items: center;
+}
+
+.container-logos {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 
 #experiencias {
@@ -145,28 +156,10 @@ h1 {
     color: white;
 }
 
-#experiencias .col-4 {
+#experiencias .conteiner-experiencias-box {
     display: flex;
     align-items: center;
     margin: 0 300px;
-}
-
-#experiencias .col-5 {
-    background-color: #272A3D;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px;
-}
-
-.tituloExperiencia {
-    margin-left: 10px;
-    font-weight: normal;
-}
-
-.explicaoExperiencia {
-    display: block;
-    padding: 10px;
-    text-align: justify;
 }
 
 button {
@@ -187,15 +180,22 @@ button {
     background-color: #202233;
 }
 
-.logos-linguagens {
-    display: flex;
-    align-items: center;
+#experiencias .conteiner-explicacao {
+    background-color: #272A3D;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
 }
 
-.container-logos {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+.tituloExperiencia {
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.explicacaoExperiencia {
+    display: block;
+    padding: 10px;
+    text-align: justify;
 }
 
 footer {
@@ -296,7 +296,7 @@ footer .container {
     color: white;
 }
 
-.rede-social h2 {
+.conteiner-rede-social-box h2 {
     line-height: 1.1;
     text-align: center;
     color: white;
@@ -309,12 +309,12 @@ a{
     color: white;
 }
 
-.rede-social img{
+.conteiner-rede-social-box img{
     height: 60px;
     width: 50px;
 }
 
-.rede-social {
+.conteiner-rede-social-box {
     display: table;
     flex-direction: column;
 }
@@ -324,27 +324,27 @@ a{
     align-items: center;
 }
 
-.icones {
+.icons {
     display: flex;
     align-items: center;
     margin: 0 auto;
 }
 
-.github h2{
+.conteiner-github h2{
     line-height: 1.1;
     text-align: center;
     color: white;
     font-weight: 600;
 }
 
-.github img {
+.conteiner-github img {
     display: flex;
     height: 60px;
     width: 50px;
     margin: 0 auto;
 }
 
-.github .conteiner-link {
+.conteiner-github .conteiner-link-box {
     display: table;
     flex-direction: column;
     margin: 0 auto;
@@ -363,6 +363,7 @@ a{
 
     #apresentacao img {
         border-radius: 50%;
+        height: 20em;
     }
     
     .sobre-mim h1{
@@ -371,7 +372,7 @@ a{
 }
 
 @media only screen and (max-width: 1000px) {
-    .col-3 {
+    .conteiner-habilidades {
         display: flex;
         flex-direction: column;
     }
@@ -399,7 +400,7 @@ a{
 }
 
 @media only screen and (max-width: 1400px) {
-    #experiencias .col-4 {
+    #experiencias .conteiner-experiencias-box {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -407,7 +408,7 @@ a{
 }
 
 @media only screen and (max-width: 910px) {
-    #experiencias .col-4 {
+    #experiencias .conteiner-experiencias-box {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -454,7 +455,7 @@ a{
         padding: 0;
     }
 
-    .rede-social img{
+    .conteiner-rede-social-box img{
         display: flex;
         align-items: center;
         margin: 0 auto;

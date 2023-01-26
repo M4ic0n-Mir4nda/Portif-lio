@@ -11,41 +11,41 @@
 <body>
     <head>
         <nav class="menu">
-            <a href="#">Sobre Mim</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Experiências Profissionais</a>
-            <a href="#">Contatos</a>
+            <a href="#apresentacao">Sobre Mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#experiencias">Experiências Profissionais</a>
+            <a href="#footer_contact">Contatos</a>
         </nav>
         <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">
             menu
         </span>
         <menu id="itens">
             <ul>
-                <li><a href="#">Sobre Mim</a></li>
-                <li><a href="#">Habilidades</a></li>
+                <li><a href="#apresentacao">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#experiencias">Experiências Profissionais</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="#footer_contact">Contatos</a></li>
             </ul>
         </menu>
     </head>
         <main>
-            <div class="col-1">
+            <div class="conteiner-apresentacao">
                 <section id="apresentacao">
                     <img src="imagens/Foto-Perfil.jpg" alt="minha foto de perfil" class="img-perfil">
-                <div class="sobre-mim">
-                    <h1>Sobre mim</h1>
-                    <p>Olá, seja bem-vindo! Meu nome é Maicon Miranda Santana, tenho 21 anos, moro em Suzano - SP e curso Anál. e Desenvolvimento de Sistemas na faculdade Impacta.</p>
-                    <p>Estou em busca de uma oportunidade como desenvolvedor Front End e Back end, sempre gostei muito de computação desde que ganhei meu primeiro computador aos 10 anos, desde então eu me aventuro pelo mundo da computação, no início meu foco era a parte técnica só que com o tempo vim conhecendo a programação e percebi que é isso que eu quero levar a sério por isso venho estudando sobre o assunto e buscando me especializar na programação.</p>
-                    <a href="#">Entrar em contato</a>
-                </div>
-            </section>
+                    <div class="sobre-mim">
+                        <h1>Sobre mim</h1>
+                        <p>Olá, seja bem-vindo! Meu nome é Maicon Miranda Santana, tenho 21 anos, moro em Suzano - SP e curso Anál. e Desenvolvimento de Sistemas na faculdade Impacta.</p>
+                        <p>Estou em busca de uma oportunidade como desenvolvedor Front End e Back end, sempre gostei muito de computação desde que ganhei meu primeiro computador aos 10 anos, desde então eu me aventuro pelo mundo da computação, no início meu foco era a parte técnica só que com o tempo vim conhecendo a programação e percebi que é isso que eu quero levar a sério por isso venho estudando sobre o assunto e buscando me especializar na programação.</p>
+                        <a href="https://api.whatsapp.com/send?phone=5511961097428&text=Olá%20Maicon!%20Vim%20Através%20do%20seu%20portifólio" target="_blank">Entrar em contato</a>
+                    </div>
+                </section>
             </div>
             <section id="habilidades">
-                <div class="col-2">
-                    <div class="col-3">
-                        <div class="conteiner-logos">
+                <div class="container-habilidades-box">
+                    <div class="conteiner-habilidades">
+                        <div>
                             <h1>Habilidades</h1>
-                            <p>Essas são as principais tecnologias que estou estudante atualmente</p>
+                            <p>Essas são as principais tecnologias que estou estudando atualmente</p>
                             <div class="logos-linguagens">
                                 <div class="container-logos">
                                     <picture>
@@ -95,33 +95,33 @@
             </section>
             <section id="experiencias">
                 <h1>Experiências</h1>
-                <div class="col-4">
+                <div class="conteiner-experiencias-box">
                     <div class="botoes-experiencias">
                         <button class="btnUm" data-experiencias="estoquista">Estoquista</button>
                         <button class="btnDois" data-experiencias="vendedor">Vendedor</button>
                         <button class="btnTres" data-experiencias="tecnicoTI">Técnico de T.I.</button>
                     </div>
-                <div class="col-5">
+                <div class="conteiner-explicacao">
                     <div>
-                        <h3 class="tituloExperiencia">Estoquista</h3>
+                        <h3 class="tituloExperiencia">Darc by Magazine</h3>
                     </div>
-                    <p class="explicaoExperiencia">Responsavel no recebimento e na conferência de produtos, separação de materiais de acordo com especificações, acompanhamento de produtos que estiverem acabando, elaboração de relatórios sobre a entrada e saída de produtos, separação de pedidos e manutenção da organização do local em que se encontram esses produtos</p>
+                    <p class="explicacaoExperiencia">Responsavel no recebimento e na conferência de produtos, separação de materiais de acordo com especificações, acompanhamento de produtos que estiverem acabando, elaboração de relatórios sobre a entrada e saída de produtos, separação de pedidos e manutenção da organização do local em que se encontram esses produtos</p>
                 </div>
                 </div>
             </section>
     </main>
-    <footer id="footer-contatos">
+    <footer id="footer_contact">
             <div class="container">
                     <div class="footer-div contacts-area">
                         <h2 class="title little-title">Contatos</h2>
-                        <div class="contacts-buttons-area">
-                            <div class="contact-box">
-                                <div class="contact-icon" style="background: #223E8B">
-                                    <img src="imagens/linkedin-icon.svg" alt="icone linkedin" class="dev-icon-media">
+                            <div class="contacts-buttons-area">
+                                <div class="contact-box">
+                                    <div class="contact-icon" style="background: #223E8B">
+                                        <img src="imagens/linkedin-icon.svg" alt="icone linkedin" class="dev-icon-media">
+                                    </div>
+                                    <span class="contact-text">maicon-miranda</span>
                                 </div>
-                                <span class="contact-text">maicon-miranda</span>
                             </div>
-                        </div>
                         <div class="contacts-buttons-area">
                             <div class="contact-box">
                                 <div class="contact-icon" style="background: #32a852">
@@ -139,31 +139,32 @@
                             </div>
                         </div>
                     </div>
-                <div class="rede-social">
+                <div class="conteiner-rede-social-box">
                     <h2 class="little-title">Minhas Redes Sociais</h2>
                         <div class="conteiner-icons">
-                            <div class="icones">
-                                <a href="#"><img src="imagens/linkedin-svgrepo-com.svg" alt="link do linkedin"></a>
+                            <div class="icons">
+                                <a href="https://www.linkedin.com/in/maicon-miranda-/?trk=public_profile-settings_edit-profile-content&originalSubdomain=br" target="_blank"><img src="imagens/linkedin-svgrepo-com.svg" alt="link do linkedin"></a>
                             </div>
-                            <div class="icones">
-                                <a href="#"><img src="imagens/whatsapp-icon.svg" alt="link do whatsapp"></a>
+                            <div class="icons">
+                                <a href="https://api.whatsapp.com/send?phone=5511961097428&text=Ol%C3%A1%20Maicon!%20Vim%20Atrav%C3%A9s%20do%20seu%20portif%C3%B3lio" target="_blank"><img src="imagens/whatsapp-icon.svg" alt="link do whatsapp"></a>
                             </div>
-                            <div class="icones">
-                                <a href="#"><img src="imagens/gmail-icon.svg" alt="nome do email"></a>
+                            <div class="icons">
+                                <a href="mailto:maiconmirandasantana@gmail.com" target="_blank"><img src="imagens/gmail-icon.svg" alt="email adress"></a>
                             </div>
                         </div>
                 </div>
-                <div class="github">
+                <div class="conteiner-github">
                     <h2 class="little-title">Mais projetos podem ser encontrados em</h2>
-                    <a href="#" class="icon-github"><img src="imagens/github-icon.svg" alt="icone do github"></a>
-                    <div class="conteiner-link">
+                    <a href="https://github.com/M4ic0n-Mir4nda" class="icon-github" target="_blank"><img src="imagens/github-icon.svg" alt="icone do github"></a>
+                    <div class="conteiner-link-box">
                         <div class="link-github">
-                            <a href="#">M4ic0n-Mir4nda/github</a>
+                            <a href="https://github.com/M4ic0n-Mir4nda" target="_blank">M4ic0n-Mir4nda/github</a>
                         </div>
                     </div>
                 </div>
             </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
