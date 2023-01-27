@@ -14,18 +14,17 @@ body {
 nav {
     text-align: center;
     padding: 10px;
-    background-color: #272A3D;
+    background-color: #192A68;
 }
 
 h1 {
     text-align: center;
-
     font-size: 2.8em;
     font-weight: bolder;
 }
 
 .menu a{
-    color: #c08cdb;
+    color: white;
     text-decoration: none;
     margin-left: 5px;
     padding: 10px;
@@ -35,11 +34,11 @@ h1 {
 }
 
 .menu a:hover {
-    color: white;
+    color: #62bfed;
 }
 
 #burguer {
-    background-color: #272A3D;
+    background-color: #192A68;
     display: none;
     color: white;
     text-align: right;
@@ -48,7 +47,7 @@ h1 {
 }
 
 #itens {
-    background-color: #272A3D;
+    background-color: #192A68;
     text-align: right;
     padding: 10px;
     display: none;
@@ -56,7 +55,7 @@ h1 {
 
 #itens a {
     text-decoration: none;
-    color: #c08cdb;
+    color: white;
 }
 
 #apresentacao img {
@@ -114,11 +113,11 @@ h1 {
 }
 
 .conteiner-apresentacao {
-    background-color: #211E29;
+    background-color: #111d4a;
 }
 
 .container-habilidades-box {
-    background-color: #2E2A3D;
+    background-color: #192a68;
     display: flex;
     align-items: center;
     color: white;
@@ -152,7 +151,7 @@ h1 {
 }
 
 #experiencias {
-    background-color: #211E29;
+    background-color: #111d4a;
     color: white;
 }
 
@@ -199,7 +198,7 @@ button {
 }
 
 footer {
-    background-color: #E2127A;
+    background-color: #62bfed;
 }
 
 footer .container {
@@ -259,8 +258,7 @@ footer .container {
     border-radius: 10px;
     overflow: hidden;
     counter-reset: #fff;
-    cursor: pointer;
-    background-color: #1D2033;
+    background-color: #272A3D;
     transition: all 0.3s ease-in-out;
     width: 100%;
 }
@@ -423,7 +421,6 @@ a{
         border-radius: 5px;
         border: none;
         cursor: pointer;
-        background-color: #272A3D;
         transition-duration: .5s;
         color: white;
     }
