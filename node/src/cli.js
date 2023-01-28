@@ -5,15 +5,25 @@ import listaValidada from "./validahttp.js"
 
 const caminho = process.argv;
 
-async function imprimeLista(resultado, arquivo = '') {
-    console.log(
-        chalk.yellow('lista validada'),
-        chalk.greenBright(arquivo),
-        await listaValidada(resultado));
+async function imprimeLista(valida, resultado, arquivo = '') {
+    
+    if (valida) {
+        console.log(
+            chalk.yellow('lista validada'),
+            chalk.greenBright(arquivo),
+            await listaValidada(resultado));
+    } else {
+        console.log(
+            chalk.yellow('lista de links'),
+            chalk.bgGreen(arquivo),
+            resultado
+        )
+    }
 }
 
 async function processaTexto(argumento) {
     const caminho = argumento[2];
+    const valida = argumento[3] === 'valida';
 
     try {
         fs.lstatSync(caminho);
@@ -26,12 +36,12 @@ async function processaTexto(argumento) {
     
     if (fs.lstatSync(caminho).isFile()) {
         const resultado = await pegaArquivo(argumento[2])
-        imprimeLista(resultado)
+        imprimeLista(valida, resultado)
     } else if (fs.lstatSync(caminho).isDirectory()) {
         const arquivos = await fs.promises.readdir(caminho);
         arquivos.map( async (nomeArquivo) => {
             const lista = await pegaArquivo(`${caminho}/${nomeArquivo}`);
-            imprimeLista(lista, nomeArquivo)
+            imprimeLista(valida, lista, nomeArquivo)
         })
     }
 }
