@@ -14,7 +14,7 @@ body {
 nav {
     text-align: center;
     padding: 10px;
-    background-color: #192A68;
+    background-color: #111d4a;
 }
 
 h1 {
@@ -113,11 +113,56 @@ h1 {
 }
 
 .conteiner-apresentacao {
+    background-color: #192a68;
+}
+
+#projetos {
     background-color: #111d4a;
+    color: #fff;
+}
+
+#projetos h1 {
+    text-align: center;
+    padding-right: 400px;
+}
+
+.container-projetos {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px
+}
+
+.projeto {
+    background-color: #272A3D;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    margin: 10px;
+}
+
+.projeto h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.projeto p {
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.projeto a {
+    text-decoration: underline;
+}
+
+
+
+.projeto .text-link {
+    text-align: center;
 }
 
 .container-habilidades-box {
-    background-color: #192a68;
+    background-color: #111d4a;
     display: flex;
     align-items: center;
     color: white;
@@ -151,7 +196,7 @@ h1 {
 }
 
 #experiencias {
-    background-color: #111d4a;
+    background-color: #192a68;
     color: white;
 }
 
@@ -376,21 +421,23 @@ a{
     }
 }
 
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 805px) {
     nav {
         display: none;
     }
     #burguer {
         display: block;
+        background-color: #111d4a;
     }
 }
 
-@media only screen and (min-width: 711px) {
+@media only screen and (min-width: 804px) {
     nav {
         display: block;
     }
     #burguer {
         display: none;
+        background-color: #111d4a;
     }
     #itens li {
         display: none;
@@ -405,12 +452,98 @@ a{
     }
 }
 
+@media only screen and (min-width: 1350px) {
+    .studio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+    }
+    
+    .node {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+    }
+    
+    .crud {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px; 
+    }
+}
+
+@media only screen and (min-width: 1720px) {
+    .conciflex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px; 
+    }
+}
+
+@media only screen and (max-width: 1919px) {
+    .studio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .node {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .conciflex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .crud {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 804px) {
+    nav {
+        display: block;
+    }
+    #burguer {
+        display: none;
+        background-color: #111d4a;
+    }
+    #itens li {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 910px) {
     #experiencias .conteiner-experiencias-box {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
     }
+
+    #projetos h1 {
+        padding-right: 0;
+    }
+
+    .container-projetos {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .projeto {
+        width: 80%;
+        margin: 10px auto;
+    }
+
 
     button {
         display: block;
